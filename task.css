@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background: linear-gradient( to left,white, blue);
+    margin-bottom: 0;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.h11{
+    background: linear-gradient(to top,white,blue,white,blue,white);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 0 0 15px rgba(0,0,0,.5);
+    /* position: absolute; */
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+    /* padding: 5px; */
+
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+.color{
+    background: linear-gradient( to right,white, blue);
+    width: 100%;
+    height: 100px;
+    margin-top: 0;
+    padding: 10px;
+}
+.nav2, .nav3, .nav4, .nav5{
+  background: linear-gradient( to top,white, blue);
+  width: 100%;
+  height: 80px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.h12, .h13, .h14, .h15{
+  text-align: center;
+  font-weight: bolder;
+  font-style: italic;
+  color: white;
+}
+.ary{
+  padding: 20px;
+  margin-top: 30px;
+}
+.col{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.set{
+  padding: 30px;
+  text-align: center;
+}
+.containerr {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.containerr img {vertical-align: middle;}
+
+.containerr .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  /* height: 70px; */
+  padding: 20px;
+}
+.col-4{
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.row1{
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column1{
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  width: 100px;
+  /* padding: 0 2px; */
+}
+
+.column1 img{
+  margin-top: 20px;
+  vertical-align: middle;
+  
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column1 {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column1 {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+.footer{
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  /* background-color: red; */
+  background: linear-gradient( to bottom, white,blue);
+  color: white;
+  text-align: center;
+}
